@@ -9,7 +9,7 @@ const ToDoForm = ({ onAddTodo }) => {
     e.preventDefault();
 
     // Create a new to-do item and send it to the backend
-    fetch('http://localhost:3000/todos', {
+    fetch('http://ec2-3-142-218-155.us-east-2.compute.amazonaws.com:3000/todos', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

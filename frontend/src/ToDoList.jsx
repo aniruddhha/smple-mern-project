@@ -5,7 +5,7 @@ const ToDoList = () => {
 
   // Fetch all to-do items from the backend
   useEffect(() => {
-    fetch('http://localhost:3000/todos')
+    fetch('http://ec2-3-142-218-155.us-east-2.compute.amazonaws.com:3000/todos')
       .then(response => response.json())
       .then(data => setTodos(data))
       .catch(error => console.error('Error fetching todos:', error));
